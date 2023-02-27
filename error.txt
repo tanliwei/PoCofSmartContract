@@ -1,0 +1,9 @@
+
+Error  
+[⠒] Failed to install solc 0.8.18: request or response body error: operation timed out
+Error: 
+request or response body error: operation timed out
+
+请求github连接失败导致，换个VPN线路
+
+
