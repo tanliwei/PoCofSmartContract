@@ -15,15 +15,15 @@ contract JoshDavisETHDenverTest is Test {
     }
 
     function testAnyOneCanMintAnyamount() public {
-        vm.startPrank(address(22));
-        denver.mint(address(22));
+        vm.startPrank(address(2));
+        denver.mint(address(2));
         vm.stopPrank();
-        assertEq(denver.balanceOf(address(22)), 1);
-        vm.startPrank(address(33));
-        denver.mint(address(33));
-        denver.mint(address(33));
+        assertEq(denver.balanceOf(address(2)), 1);
+        vm.startPrank(address(3));
+        denver.mint(address(3));
+        denver.mint(address(3));
         vm.stopPrank();
-        assertEq(denver.balanceOf(address(33)), 2);
+        assertEq(denver.balanceOf(address(3)), 2);
     }
 
 }
